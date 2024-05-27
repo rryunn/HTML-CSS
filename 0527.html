@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .mini{
+            width: 110px;
+            height: 180px;
+            margin: 5px;
+            border: 3px solid white;
+
+        }
+        body{
+            margin:0;
+            background-color: rgb(231, 230, 224);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header{
+            padding-top: 20px;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        #first .mini:first-child{
+            background-color: tomato;
+        }
+        #first .mini:nth-child(2){
+            background-color: teal;
+        }
+        #first .mini:nth-child(3){
+            background-color: burlywood;
+        }
+        #first .mini:nth-child(4){
+            background-color: thistle;
+        }
+        .second{
+            background-color: white;
+            width: 110px;
+            height: 60px;
+            position:relative;
+            top: 10px;
+            font-size: 10px;
+            font-weight: bolder;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <address><strong> The Best Colors </strong></address>
+    </header>
+    <div id = first>
+        <div class = "mini">
+            <div class= "second">
+                Tomato
+                <br>
+                #FF6347
+            </div>
+        </div>
+        <div class = "mini">
+            <div class= "second">
+                Teal
+                <br>
+                #008080
+            </div>
+        </div>
+        <div class = "mini">
+            <div class= "second">
+                Burlywood
+                <br>
+                #DEB887
+            </div>
+        </div>
+        <div class = "mini">
+            <div class= "second">
+                thistle
+                <br>
+                #D7BFD7
+            </div>
+        </div>
+    </div>
+</body>
+</html>
