@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh; /*설정하지 않을 시 body요소의 높이가 콘텐츠의 높이에 맞춰지므로*/
+        }
+        @keyframes awesome {
+            from{
+                transform:rotateX(0);
+            }
+            to{
+                transform:rotateX(360deg);
+            }
+        }
+        @keyframes great {
+            0%{
+                transform:rotateX(0);
+                border-radius: 0;
+            }
+            50%{
+                transform:rotateX(100deg) translateY(100px);
+                border-radius: 50%;
+            }
+            100%{
+                transform:rotateX(0px) translateY(0);
+                border-radius: 0;
+            }
+        }
+        img{
+            border: 5px solid black;
+            border-radius: 50%;
+
+            width: 200px;
+            height: 200px;
+        }
+        #img1{
+            animation: awesome 5s ease-in-out infinite;
+        }
+        #img2{
+            animation: great 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <img id = "img1" src = "1.jpg">
+    <img id = "img2" src = "2.png">
+    
+</body>
+</html>
