@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.back {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid rgb(22, 214, 192);
+}
+
+.header {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.header_x, .header_playlist {
+    font-size: 24px;
+}
+.header_x{
+    margin-right: 100px;
+}
+.first {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first_img {
+    font-size: 50px;
+    margin-right: 20px;
+    background-color: rgb(255, 200, 0);
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_span h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.second_play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-right: 20px;
+    border-bottom-width: 5px;
+}
+
+.second_heart, .second_plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-bottom-width: 5px;
+}
+
+.second_play span {
+    margin-left: 5px;
+}
+
+.third {
+    margin-top: 20px;
+}
+
+.third_list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.list_color1 {
+    width: 40px;
+    height: 40px;
+    background-color: tomato;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.list_color2 {
+    width: 40px;
+    height: 40px;
+    background-color: palevioletred;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.list_color3 {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.list_color4 {
+    width: 40px;
+    height: 40px;
+    background-color: teal;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h2, .text span {
+    margin: 0;
+}
