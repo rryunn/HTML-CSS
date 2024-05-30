@@ -5,79 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            margin:0;
+        body {
+            margin: 0;
         }
-        header{
+        header {
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
-            margin-bottom: 50px;
+            align-items: center;
             background-color: rgb(255, 200, 0);
+            padding: 15px 40px;
         }
-        .first{
+        .search-container {
             display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
-        img{
-            width: 200px;
+        .search-container input {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid rgb(164, 161, 161);
+            border-radius: 10px;
+            
         }
-        .first_list{
-            display:flex;
+        .first {
+            display: flex;            
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .first img {
+            width: 150px;
+            border-radius: 10px;
+        }
+        .first_list {
+            display: flex;
             flex-direction: column;
             margin-left: 10px;
         }
-        h3{
-            color:rgba(0,0,0,0.2);
+        h2, h3 {
+            text-align: center;
         }
-        .first_kind{
+        h3 {
+            color: rgba(0, 0, 0, 0.2);
+        }
+        .first_kind {
             margin-bottom: 20px;
         }
-        span{
+        .first_kind span {
             background-color: azure;
             margin-right: 5px;
+            padding: 5px;
         }
-        .first_book input{
+        .first_list_star {
+            margin-bottom: 15px;
+            color: rgb(255, 213, 0);
+        }
+        .first_book {
+            display: flex;
+            align-items: center;
+        }
+        .first_book input {
             border: none;
             border-radius: 5px;
             background-color: rgb(37, 21, 21);
             color: white;
             width: 110px;
             height: 35px;
+            margin-left: 10px;
         }
-        .first_book i{
+        .first_book i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: rgb(255, 200, 0);
             width: 35px;
             height: 35px;
             border-radius: 50%;
         }
+        .img_list {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .img_list .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img_list img {
+            margin-bottom: 15px;
+            width: 90px;
+            height: 130px;
+            border-radius: 10px;
+        }
+        .author {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .author img {
+            width: 90px;
+            height: 120px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .author_ex {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .author p {
+            color: rgba(0, 0, 0, 0.2);
+        }
+        .stars {
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 213, 0);
+        }
     </style>
 </head>
 <body>
     <header>
-        <i class="fa-solid fa-list"></i>
-        <span>library</span>
-        <i class="fa-solid fa-bag-shopping"></i>
+        <i class="fa-solid fa-list fa-lg"></i>
+        <h2>library</h2>
+        <i class="fa-solid fa-bag-shopping fa-lg"></i>
     </header>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
     <main>
+        <h2>Book of the day</h2>
         <section class="first">
-            <img src = "img1.jpg"/>
-            <div class ="first_list">
-                <h2>Book of the day</h2>
+            <img src="img1.jpg"/>
+            <div class="first_list">
+                <h2>No Fixed Abode</h2>
                 <h3>Journey Through</h3>
-                <div class = "first_kind">
+                <div class="first_list_star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+
+                <div class="first_kind">
                     <span>Journey</span>
                     <span>Biography</span>
                 </div>
-                <div class = "first_book">
+                <div class="first_book">
                     <i class="fa-solid fa-bookmark fa-lg"></i> 
-                    <input type = "submit" value = "Book Now"/>
+                    <input type="submit" value="Book Now"/>
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section>
+            <h2>Top Adventures</h2>
+            <div class="img_list">
+                <div class="image-container">
+                    <img src="img2.png"/>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="img3.png"/>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="img4.png"/>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="img5.png"/>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Popular authors</h2>
+            <div class="author">
+                <img src="img6.png"/>
+                <div class="author_ex">
+                    <h4>George Raymond Richard Martin</h4>
+                    <p>Modern American science fiction writer, screenwriter, producer and editor, winner of many literary awards.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://kit.fontawesome.com/f41badc7d9.js" crossorigin="anonymous"></script>
 </body>
-    </body>
 </html>
