@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .com {
+            display: flex;
+            background-color: #efefef;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .com_div {
+            border-radius: 30px;
+            width: 300px;
+            height: 600px;
+            background-color: white;
+            margin-left: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .com_div_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .com_div_header i {
+            font-size: 24px;
+        }
+        .com_div_sing {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .com_div_sing img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .com_div_sing h3 {
+            margin: 10px 0 5px;
+        }
+        .com_div_sing span {
+            color: rgba(0, 0, 0, 0.2);
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .com_div_s {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .com_div_shuffle {
+            background-color: black;
+            width: 90px;
+            height: 40px;
+            margin-right: 20px;
+            border-radius: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .com_div_heart {
+            border: 1px solid black;
+            width: 90px;
+            height: 40px;
+            border-radius: 20px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .com_div_list {
+            overflow-y: auto;
+        }
+        .com_div_list_song {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .com_div_list_song img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .song_col span {
+            display: block;
+        }
+        .com_div_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .com_div_img img {
+            border-bottom: 5px solid rgb(83, 78, 62);
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        .com_div_controls {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .com_div_controls i {
+            font-size: 24px;
+        }
+        .com_div_progress {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .com_div_progress input {
+            width: 80%;
+        }
+        .com_div_progress span {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="com">
+        <div class="com_div">
+            <header class="com_div_header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </header>
+            <div class="com_div_sing">
+                <img src="chal.jpg" alt="Charlie Puth"/>
+                <h3>Charlie Puth, The Creator</h3>
+                <span>Rap, Hip-Hop</span>
+            </div>
+            <div class="com_div_s">
+                <div class="com_div_shuffle">Shuffle</div>
+                <div class="com_div_heart">212972</div>
+            </div>
+            <div class="com_div_list">
+                <div class="com_div_list_song">
+                    <img src="chal.jpg" alt="Song Thumbnail">
+                    <div class="song_col">
+                        <span>Charlie Puth</span>
+                        <span>Dangerously</span>
+                    </div>
+                </div>
+                <div class="com_div_list_song">
+                    <img src="chal.jpg" alt="Song Thumbnail">
+                    <div class="song_col">
+                        <span>Charlie Puth</span>
+                        <span>We Don't Talk Anymore</span>
+                    </div>
+                </div>
+                <div class="com_div_list_song">
+                    <img src="chal.jpg" alt="Song Thumbnail">
+                    <div class="song_col">
+                        <span>Charlie Puth</span>
+                        <span>Attention</span>
+                    </div>
+                </div>
+                <div class="com_div_list_song">
+                    <img src="chal.jpg" alt="Song Thumbnail">
+                    <div class="song_col">
+                        <span>Charlie Puth</span>
+                        <span>How Long</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="com_div">
+            <header class="com_div_header">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-list"></i>
+            </header>
+            <div class="com_div_img">
+                <img src="chal.jpg" alt="Album Art"/>
+            </div>
+            <div class="com_div_progress">
+                <span>0:00</span>
+                <input type="range" min="0" max="100" value="50">
+                <span>3:45</span>
+            </div>
+            <div class="com_div_sing">
+                <h3>Dangerously</h3>
+                <span>Charlie Puth</span>
+            </div>
+            <div class="com_div_controls">
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f41badc7d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
